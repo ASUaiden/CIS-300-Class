@@ -1,0 +1,78 @@
+:root {
+  --text: #1f140a;
+  --background: #fff8f0;
+  --primary: #294475;
+  --secondary: #947742;
+  --accent: #815128;
+
+  --surface: #ffffff;
+  --border: rgba(31, 20, 10, 0.12);
+  --muted: rgba(31, 20, 10, 0.68);
+  --radius: 10px;
+  --shadow: 0 6px 20px rgba(31, 20, 10, 0.08);
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+* {
+    background: var(--background)
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#intro-text {
+    flex: 1 1 300px;
+}
+
+#title {
+    color: var(--primary);
+    margin: 0px;
+    padding: 20px;
+}
+
+nav {
+    font-weight: bold;
+    padding: 0px;
+    font-size: 120%;
+    text-align: center;
+    text-align: left;
+    padding-left: 1em;
+    color: var(--text);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 0px;
+    font-size: 1.2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1.5em;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+#resume {
+    padding-right: 20px;
+}
+
+#portrait {
+    max-width: 500px;
+    max-height: 500px;
+}
