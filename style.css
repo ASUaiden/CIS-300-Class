@@ -82,8 +82,28 @@ nav a {
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 1.25rem;
+  text-align: center;
+}
+
+.Projects table {
+    margin: 0 auto;
 }
 
 h2.projects {
     padding-left: 20px;
+}
+
+table, td, th{
+    border: 2px solid var(--accent);
+    padding:5px;
+    text-align: center;
+}
+
+#resumeLink {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.Resume {
+    text-align: center;
 }
