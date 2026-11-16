@@ -1,67 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aiden Young</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aiden Young</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1 id="title">Aiden Young</h1>
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="experience.html">Work Experience</a></li>
-                <li><a href="resume.html" id="resume">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="intro">
-        <img src="assets/portrait.jpeg" id="portrait" alt="Portrait of Aiden Young">
-        <div id="intro-text">
-            <h2 id="WAMI">Who am I?</h2>
-            <p>My name is Aiden Young, and I am a CIS student at Arizona State graduating in the Spring.  Use this site to learn a little more about me.</p>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Aiden Young.</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="experience.html">Work Experience</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <!-- Replace with: <img src="images/hero.jpg" alt="..."> or set a background-image in style.css -->
+      <div class="hero-overlay">
+        <div class="container">
+          <p class="hero-eyebrow">Hi, I'm</p>
+          <h1>Aiden Young.</h1>
+          <p class="hero-tagline">Student · Developer · Builder of things</p>
+          <a href="projects.html" class="btn btn-light">See my work</a>
         </div>
+      </div>
     </section>
 
-    <section class="Projects">
-        <h2>Projects</h2>
-        <table>
-            <tr>
-                <th>Project</th>
-                <th>Description</th>
-                <th>Link (if applicable)</th>
-            </tr>
-            <tr>
-                <td>GoAround</td>
-                <td>Airport Guessing Game</td>
-                <td><a href="https://www.goaround.fun" target="_blank">goaround.fun</td>
-            </tr>
-            <tr>
-                <td>Photo Labeler</td>
-                <td>Freelance project that auto labels pictures</td>
-                <td><a href="https://photolabeler.pages.dev" target="_blank">Link to site</td>
-            </tr>
-            <tr>
-                <td>Capsule</td>
-                <td>Thesis project. App in development</td>
-                <td>No Link Yet</td>
-            </tr>
-        </table>
+    <!-- About + Contact -->
+    <section class="container about-contact">
+      <div class="about">
+        <h2 class="section-title"><a href="about.html">About Me.</a></h2>
+        <div class="about-body">
+          <div class="portrait placeholder">
+            <img src="images/headshot.jpeg">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+              <circle cx="50" cy="36" r="16" />
+              <path d="M18 92 C18 62, 82 62, 82 92 Z" />
+            </svg>
+          </div>
+          <div class="bio">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. I'm a
+              short placeholder bio — swap this out for a few sentences about
+              who you are, what you study or do, and what you're passionate about.
+            </p>
+            <p>
+              Mention a couple of interests or goals here, then point visitors
+              toward the full About page for the rest of the story.
+            </p>
+            <a href="about.html" class="text-link">Read more about me &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="contact-card" id="contact">
+        <h2>Contact.</h2>
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xyewgwpv" method="POST">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="What would you like to talk about?" required></textarea>
+          </label>
+          <input type="hidden" name="_subject" value="New message from your website">
+          <!-- Honeypot: hidden from humans, bots fill it in -->
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </aside>
     </section>
 
-    <section class="Resume">
-        <h2>Resume</h2>
-        <h3>Like what you see? Check out my <a id="resumeLink" href="resume.html">Resume.</a></h3>
-        </table>
+    <!-- Project Rundown -->
+    <section class="container projects">
+      <h2 class="section-title"><a href="projects.html">Project Rundown.</a></h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-thumb"><img src="images/goaround.png" alt="GoAround Logo"></div>
+          <h3><a href="projects.html#project-1" class="card-link">GoAround.</a></h3>
+          <p>A daily airport guessing game based on given clues.  My first project.</p>
+          <a href="https://goaround.fun" target="_blank" class="text-link card-extra-link">See actual project &rarr;</a>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb placeholder"><img src="images/Photo_Label_Example.jpeg" alt="Automatic Photo Labeler example"></div>
+          <h3><a href="projects.html#project-2" class="card-link">Automatic Photo Labeler.</a></h3>
+          <p>A website that adds labels to your photos. Developed out of a freelance project.</p>
+          <a href="https://goaround.fun" target="_blank" class="text-link card-extra-link">See actual project &rarr;</a>
+        </div>
+        <a href="projects.html#project-3" class="project-card">
+          <div class="project-thumb placeholder"><img src="images/capsuleLogo.png" alt="Capsule App"></div>
+          <h3>The Photo Capsule.</h3>
+          <p>Coming soon to an App Store&copy; near you.</p>
+        </a>
+      </div>
     </section>
+
+    <!-- Resume CTA -->
+    <section class="container resume-cta">
+      <p class="cta-lead">Like what you see?</p>
+      <p class="cta-sub">Take a look at my <a href="resume.html">Resume.</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p class="footer-name">Aiden Young</p>
+        <p>&copy; <span id="year"></span> Aiden Young. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:aidenjyoung14@gmail.com">Email</a>
+        <a href="https://github.com/ajyoung14" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/aidenjyoung" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
-<footer>
-    <h5>&copy; Aiden Young 2026.</h5>
-</footer>
 </html>
