@@ -1,11 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aiden Young</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Aiden Young</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="experience.html">Work Experience</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- Intro -->
+    <section class="container about-intro">
+      <div class="about-photo">
+        <img src="assets/headshot.jpeg" alt="Aiden Young">
+      </div>
+      <div class="about-intro-text">
+        <p class="showcase-eyebrow">About Me</p>
+        <h1>Hi, I'm Aiden.</h1>
+        <p class="about-lead">
+          I'm a student and developer who likes turning small ideas into real,
+          working things, from daily puzzle games to tools people actually use.
+        </p>
+        <ul class="quick-facts">
+          <li><span>Based in</span> Tempe, AZ</li>
+          <li><span>Studying</span> Computer Information Systems / Arizona State University</li>
+          <li><span>Currently</span> Building The Photo Capsule</li>
+        </ul>
+        <div class="about-actions">
+          <a href="resume.html" class="btn btn-primary">View my resume</a>
+          <a href="mailto:aidenjyoung14@gmail.com" class="btn btn-outline">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="container about-section">
+      <h2 class="section-title">My Story.</h2>
+      <div class="story">
+        <p>
+          Placeholder: how you got into programming. Maybe it started with
+          GoAround, my first project: a daily airport guessing game I built
+          because I wanted something fun to play every morning.
+        </p>
+        <p>
+          Placeholder: what came next. A freelance job turned into the
+          Automatic Photo Labeler, and now I'm working on my first iOS app,
+          The Photo Capsule.
+        </p>
+        <p>
+          Placeholder: what you're aiming for, such as the kind of work, team,
+          or problems you'd like to take on next.
+        </p>
+      </div>
+    </section>
+
+    <!-- Interests -->
+    <section class="container about-section">
+      <h2 class="section-title">What I'm Into.</h2>
+      <div class="interest-grid">
+        <div class="interest-card">
+          <h3>Building Things</h3>
+          <p>Whether digital or physical, I love to build something that makes my daily life more efficient. I don't like to be slowed down, so when I see an area for improvement, I try to fix it..</p>
+        </div>
+        <div class="interest-card">
+          <h3>Traveling</h3>
+          <p>I love to travel and see the world around me. I beleive there is no better way to learn and experience culture than expiriencing it firsthand. I have been to 21 countries and 26 states, and I can't wait to see more.</p>
+        </div>
+        <div class="interest-card">
+          <h3>Aviation</h3>
+          <p>Hand in hand with traveling, I think planes play a big part in connecting the world. I have always been fascinated with aviation, and one day I hope you get my Private Pilot License.</p>
+        </div>
+        <div class="interest-card">
+          <h3>Sports</h3>
+          <p>I am a die-hard college football fan (Arizona State specifically), and love watching or going to any games I can.  I am also on the ASU pickleball team and love to play pickleball and tennis.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Toolbox -->
+    <section class="container about-section">
+      <h2 class="section-title">My Toolbox.</h2>
+      <ul class="skill-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Swift</li>
+        <li>Git</li>
+        <li>Add your own</li>
+      </ul>
+    </section>
+
+    <!-- Resume CTA -->
+    <section class="container resume-cta">
+      <p class="cta-lead">Want to see what I've built?</p>
+      <p class="cta-sub">Check out my <a href="projects.html">Projects.</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p class="footer-name">Aiden Young</p>
+        <p>&copy; <span id="year"></span> Aiden Young. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:aidenjyoung14@gmail.com">Email</a>
+        <a href="https://github.com/ajyoung14" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/aidenjyoung" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
