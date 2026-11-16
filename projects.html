@@ -1,11 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects · Aiden Young</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Aiden Young.</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="experience.html">Work Experience</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container projects-page">
+      <h1 class="section-title">Projects.</h1>
+
+      <!-- To add a project: copy one <article class="showcase-card"> block. -->
+      <div class="showcase-grid">
+
+        <article class="showcase-card" id="project-1">
+          <div class="showcase-thumb">
+            <img src="assets/goaround.png" alt="GoAround logo">
+          </div>
+          <div class="showcase-body">
+            <p class="showcase-eyebrow">Personal Project</p>
+            <h2>GoAround</h2>
+            <p class="showcase-desc">A daily airport guessing game based on facts about the airport. Using sourced data on airports combined with social accounts to promote it. My first project.
+            </p>
+            <a href="https://www.goaround.fun" target="_blank" rel="noopener" class="text-link">Play it &rarr;</a>
+          </div>
+        </article>
+
+        <article class="showcase-card" id="project-2">
+          <div class="showcase-thumb">
+            <img src="assets/Photo_Label_Example.jpeg" alt="Automatic Photo Labeler example output">
+          </div>
+          <div class="showcase-body">
+            <p class="showcase-eyebrow">Freelance</p>
+            <h2>Automatic Photo Labeler</h2>
+            <p class="showcase-desc">A website that adds labels to your photos. Using open-source facial recognition, location, and dictation features. Developed out of a freelance project.</p>
+            <a href="https://photolabeler.pages.dev" target="_blank" rel="noopener" class="text-link">See it live &rarr;</a>
+          </div>
+        </article>
+
+        <article class="showcase-card" id="project-3">
+          <div class="showcase-thumb">
+            <img src="assets/capsuleLogo.png" alt="The Photo Capsule app icon">
+          </div>
+          <div class="showcase-body">
+            <p class="showcase-eyebrow">iOS App · Coming Soon</p>
+            <h2>The Photo Capsule</h2>
+            <p class="showcase-desc">A photo sharing app with a twist. Estimated launch: January 2027</p>
+          </div>
+        </article>
+        
+        <article class="showcase-card" id="project-4">
+          <div class="showcase-body">
+            <p class="showcase-eyebrow">Personal Project</p>
+            <h2>Treasurer Tracker</h2>
+            <p class="showcase-desc">A vibe-coded project to help track member's dues collection and payment risk.  Used to help make me more efficient in my duties as treasurer of my fraternity.
+            </p>
+          </div>
+        </article>
+
+        <article class="showcase-card" id="project-5">
+          <div class="showcase-body">
+            <p class="showcase-eyebrow">Personal Project</p>
+            <h2>Aviation Weather Report Quiz</h2>
+            <p class="showcase-desc">A website that creates random weather reports (METAR, SPECI, PIREP, TAF, winds aloft) and quizzes users on each section of the report. I made it to study for a class test, but it can also be used to study for the FAA Pilot Knowledge Test.</p>
+            <a href="https://metar-practice.aidenjyoung14.workers.dev" target="_blank" rel="noopener" class="text-link">See it live &rarr;</a>
+          </div>
+        </article>
+
+        <article class="showcase-card" id="project-6">
+          <div class="showcase-body">
+            <p class="showcase-eyebrow">Personal Project</p>
+            <h2>Automated Market Newsletter</h2>
+            <p class="showcase-desc">A project that automatically sends a news rundown on different companies to your inbox every morning. Using Google's News Feed, SEC Filings, and a Claude API to review headlines. Stored and ran on GitHub.</p>
+            <a href="https://github.com/ajyoung14/Public-Daily-News" target="_blank" rel="noopener" class="text-link">See the GitHub repo &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p class="footer-name">Aiden Young</p>
+        <p>&copy; <span id="year"></span> Aiden Young. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:aidenjyoung14@gmail.com">Email</a>
+        <a href="https://github.com/ajyoung14" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/aidenjyoung" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
